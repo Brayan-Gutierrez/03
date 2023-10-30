@@ -1,8 +1,3 @@
-<!-- import aframe and then ar.js with image tracking / location based features -->
-<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-
-<!-- style for the loader -->
 <style>
   .arjs-loader {
     height: 100%;
@@ -24,6 +19,15 @@
   }
 </style>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR</title>
+  <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+</head>
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
   <div class="arjs-loader">
@@ -60,3 +64,4 @@
     <a-entity camera></a-entity>
   </a-scene>
 </body>
+</html>
