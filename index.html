@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR.js Example</title>
+    <title>Test01</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
 </head>
 
 <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam;">
+    <a-scene >
         <!-- Marcador de imagen -->
         <a-marker preset="hiro">
             <!-- Modelo 3D que se mostrará cuando se detecte el marcador -->
@@ -19,7 +19,7 @@
 
         <!-- Cámara para ver la escena en realidad aumentada -->
         <a-entity>
-          <a-camara look-controls.enabled></a-camara>
+          <a-camara look-controls.enabled wasd-controls.enabled camera.near></a-camara>
         </a-entity>
     </a-scene>
 </body>
