@@ -14,16 +14,13 @@
         <!-- Marcador de imagen -->
         <a-marker preset="hiro">
             <!-- Modelo 3D que se mostrará cuando se detecte el marcador -->
-            <a-entity
-              gltf-model="VentageCloud_v001.gltf"
-              scale="5 5 5"
-              position="50 150 0"
-            >
-            </a-entity>
+            <a-box position="0 0.5 0" width="1" height="1" depth="1" color="red"></a-box>
         </a-marker>
 
         <!-- Cámara para ver la escena en realidad aumentada -->
-        <a-entity camera></a-entity>
+        <a-entity>
+          <a-camara look-controls.enabled></a-camara>
+        </a-entity>
     </a-scene>
 </body>
 
