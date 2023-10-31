@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Frame</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="asset1" src="./modelo/yellow_plaster_4k.gltf"></a-asset-item>
+      <a-asset-item id="rtx1" src="./modelo/VentageCloud_v002.gltf"></a-asset-item>
+    </a-assets>
+    <!-- <a-entity gltf-model="#asset1" position = "0 0 3" size = "1 1 1"></a-entity> -->
+    <a-entity gltf-model="#asset1" position = "1 1 3" size = "0.1 0.1 0.1"></a-entity>
+    <a-entity gltf-model="#rtx1" position="0 2.64628 -8.65162" rotation="65 0 0"></a-entity>
+    <a-sky color="#305AA1"></a-sky>
+  </a-scene>
+</body>
+</html>
